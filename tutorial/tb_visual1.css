@@ -21,6 +21,7 @@ figure{
    border-style: solid;
    border-width: 25px;
    border-image: url(tb_border.png) 50 repeat;
+   opacity: .55;
 }
 figure img{
    display: block;
@@ -41,24 +42,39 @@ html{
 
 /* Article Styles */
 article{
-   background: url(tb_back2.png) bottom right / 15% no-repeat content-box,
-               url(tb_back3.png) bottom left / 15% no-repeat content-box,
+   background: url(tb_back2.png) bottom right / 15% repeat content-box,
+               url(tb_back3.png) bottom left / 15% repeat content-box,
                url(tb_back4.png) 100%/cover no-repeat,
                rgb(211, 211, 211);
+}
+article h1{
+   text-shadow: rgb(181, 211, 181) 2px 2px 1px,
+                rgba(21, 21, 21, 0.66) 5px 5px 25px;
 }
 
 /* Page Body Styles */
 body{
    border-left: 1px solid rgb(51, 51, 51);
    border-right: 1px solid rgb(51, 51, 51);
+   box-shadow: rgb(51, 51, 51) 15px 0px 25px,
+               rgb(51, 51, 51) -15px 0px 25px;
+
 }
+
 
 /* Aside Styles */
 aside{
    border: 4px double rgb(45, 93, 62);
    border-radius: 30px;
+   box-shadow: rgba(51, 91, 51, 0.4) 0px 0px 20px 10px;
+   /* the 10px is a spread, basically says in every direction since
+   offsetX/Y is 0 */
+   background: radial-gradient(white, rgb(151, 222, 151),
+                                          rgb(81, 125, 81));
 }
 
 /* Footer Styles */
-
-
+footer{
+   background: linear-gradient(345deg, rgb(172, 232, 172),
+                                       rgb(21,35,21)80%);
+}
